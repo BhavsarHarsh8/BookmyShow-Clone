@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="events.css">
+    <title>BookMyShow</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="fnav">
+            <div class="left">
+                <a href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <input id="inputText" onkeypress="searchFun(event)" type="text" placeholder="Search For Movies, Events, Plays, Sports & Activities">
+            </div>
+            <div class="right">
+                <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ahmedabad
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                  <button class="btn-sign" onclick="login()">Sign In</button>
+                  <i class="fa-solid fa-bars"></i>    
+            </div>
+        </div>
+        <div class="secNav" style="background: rgb(245, 245, 245); width: 100%;">
+        <nav class="navbar navbar-expand-lg" style="margin-top: 15px; background: rgb(245, 245, 245); width: 100%; border-bottom: 5px solid rgb(229, 229, 229);">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/pages/movies/moviespage.html">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/pages/stream/stream.html">Stream</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/pages/plays/plays.html">Plays</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Sports</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Activites</a>
+                  </li>
+                  <div class="s-right">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">ListYourShow</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Corporates</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Offers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Gift Cards</a>
+                          </li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+    <div class="carousel1" style="background-color: rgb(245, 245, 245); width: 100%">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/first.avif" class="d-block w-70"alt="...">
+          </div>
+          <div class="carousel-item">
+            <a href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/pages/fighter/fighter.html">
+            <img src="images/fighterdeskSlide.avif" class="d-block w-70" alt="...">
+          </a>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Third2.avif" class="d-block w-70" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="main-container">
+        <div class="leftside" style="width: 40%; position: static; overflow: hidden;">
+            <h1>Filter</h1>
+            <div class="Date">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Date
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Today</button></li>
+                      <li><button class="dropdown-item" type="button">Tommorrow</button></li>
+                      <li><button class="dropdown-item" type="button">This Weekend</button></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="languages">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Languages
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button" style="width: 70px;">Hindi</button></li>
+                      <li><button class="dropdown-item" type="button" style="width: 90px; margin-inline: 15px;">English</button></li>
+                      <li><button class="dropdown-item" type="button" style="width: 90px;">Gujarati</button></li>
+                      <li><button class="dropdown-item" type="button" style="width: 110px;">Malayalam</button></li>
+                      <li><button class="dropdown-item" type="button" style="width: 145px;">Multi-Language</button></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="Categories">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Comedy Shows</button></li>
+                      <li><button class="dropdown-item" type="button">Music Shows</button></li>
+                      <li><button class="dropdown-item" type="button">Award Shows</button></li>
+                      <li><button class="dropdown-item" type="button">Kids</button></li>
+                      <li><button class="dropdown-item" type="button">Meetups</button></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="Price">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Price
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Free</button></li>
+                      <li><button class="dropdown-item" type="button">0-500</button></li>
+                      <li><button class="dropdown-item" type="button">501-2000</button></li>
+                      <li><button class="dropdown-item" type="button">Above 2000</button></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="browsebtn">
+                <button>Browse by Venues</button>
+            </div>
+        </div>
+
+        <div class="rightside" style="margin-top: 60px;">
+            <h2>Events in Ahmedabad</h2>
+            <div class="list">
+                <ul class="list-items">
+                    <li><button class="item" type="button" style="width: 120px;">Comedy Shows</button></li>
+                    <li><button class="item" type="button" style="width: 95px;">Workshops</button></li>
+                    <li><button class="item" type="button" style="width: 110px;">Music Shows</button></li>
+                    <li><button class="item" type="button" style="width: 170px;">Online Streaming Events</button></li>
+                    <li><button class="item" type="button" style="width: 85px;">Meetups</button></li>
+                    <li><button class="item" type="button" style="width: 115px;">Performances</button></li>
+                    <li><button class="item" type="button" style="width: 110px; margin-top: 10px;">Award Shows</button></li>
+                    <li><button class="item" type="button" style="width: 70px; margin: 10px 4px 2px 10px;">Kids</button></li>
+                    <li><button class="item" type="button" style="width: 115px; margin: 10px 4px 2px 10px;">Exhibitions</button></li>
+                  </ul>
+            </div>
+            <div class="container-rm">
+                <!-- <h2>Recommended Movies</h2> -->
+                <div class="row my-2" style="justify-content: space-around; margin: 30px; margin-inline: -40px;
+              margin-inline-end: 100px;">
+                    <div class="col-md-2">
+                      <!-- <a href="https://in.bookmyshow.com/ahmedabad/movies/fighter/ET00304730"> -->
+                    <div class="card">
+                        <img src="images/zakir-khan.avif" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Zakir Khan Live-Ahmedabad</h5>
+                          <p class="card-text">Savanna Party Lawn..</p>
+                          <p class="card-text">Concerts</p>
+                          <p class="card-text">1000rs Onwards</p>
+
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                  </a>
+                    </div>
+                    <div class="col-md-2">
+                      <!-- <a href="https://in.bookmyshow.com/ahmedabad/movies/hanuman/ET00311673"> -->
+                        <div class="card">
+                            <img src="images/69th Hyundai.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">69th Hyundai Filmfare Awards with Gujarat Tourism</h5>
+                              <p class="card-text">Gift City:Gandhinagar..</p>
+                              <p class="card-text">Felicitation</p>
+                              <p class="card-text">2500rs Onwards</p>
+                              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-2">
+                      <!-- <a href="https://in.bookmyshow.com/ahmedabad/movies/main-atal-hoon/ET00348408"> -->
+                        <div class="card">
+                            <img src="images/Sanam Band.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Sanam Band Live Concert-Ahmedabad</h5>
+                              <p class="card-text">Club Babylon-Ahmedabad</p>
+                              <p class="card-text">Concerts</p>
+                              <p class="card-text">799rs Onwards</p>
+
+                        
+                              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-2">
+                      <!-- <a href="https://in.bookmyshow.com/ahmedabad/movies/ittaa-kittaa/ET00377604"> -->
+                        <div class="card">
+                            <img src="images/bassiii.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Kisi ko Batana Mat Ft.Anubhav Bassi</h5>
+                              <p class="card-text">H.K Hall-Ahmedabad</p>
+                              <p class="card-text">Stand-up Comedy</p>
+                              <p class="card-text">999rs Onwards</p>
+                              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+        </div>
+    </div>
+
+    <div class="container-rm">
+        <!-- <h2>Recommended Movies</h2> -->
+        <div class="row my-2" style="justify-content: space-around; margin: 30px; margin-inline: -40px;
+      margin-inline-end: 100px;">
+            <div class="col-md-2">
+              <!-- <a href="https://in.bookmyshow.com/ahmedabad/movies/fighter/ET00304730"> -->
+            <div class="card">
+                <img src="images/Curtain-Raiser.avif" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Curtain Raiser of the 69th Filmfare</h5>
+                  <p class="card-text">MAhatma Mandir..</p>
+                  <p class="card-text">Concerts</p>
+                  <p class="card-text">3000rs Onwards</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+          </a>
+            </div>
+            <div class="col-md-2">
+              <!-- <a href="https://in.bookmyshow.com/ahmedabad/movies/hanuman/ET00311673"> -->
+                <div class="card">
+                    <img src="images/28th Jan 69th Hyundai.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">69th Hyundai Filmfare Awards with Gujarat Tourism</h5>
+                        <p class="card-text">Gift City:Gandhinagar..</p>
+                        <p class="card-text">Felicitation</p>
+                        <p class="card-text">2500rs Onwards</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <!-- <a href="https://in.bookmyshow.com/ahmedabad/movies/main-atal-hoon/ET00348408"> -->
+                <div class="card">
+                    <img src="images/Indo Warehouse.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sunburn Arena Ft. Indo Warehouse</h5>
+                      <p class="card-text">Snapper Film City..</p>
+                      <p class="card-text">Concerts</p>
+                      <p class="card-text">499rs Onwards</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <!-- <a href="https://in.bookmyshow.com/ahmedabad/movies/ittaa-kittaa/ET00377604"> -->
+                <div class="card">
+                    <img src="images/Biswa.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Biswa Kalyan Rath-Live</h5>
+                      <p class="card-text">Nexus Ahmedabad One</p>
+                      <p class="card-text">Stand-up Comedy</p>
+                      <p class="card-text">799rs Onwards</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+              </a>
+            </div>
+</div>
+</div>
+        </div>
+    </div>
+
+
+        <div class="container-first-footer">
+          <div class="footer1" style="padding: 1px; display: flex;">
+            <div class="hut">
+            <img src="https://in.bmscdn.com/webin/common/icons/hut.svg" alt="">
+          </div>
+          <div class="para1">
+            <h4>List your Show</h4>
+          </div>
+          <div class="para2">
+            <p>Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow</p>
+          </div>
+            <button class="btn-con">Contact today!</button>
+          </div>
+        </div>
+
+        <div class="container-sec-footer">
+          <div class="top">
+              <div class="emptyLine1">
+              </div>
+              <a href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/index.html" class="footerLogo">
+                <img src="images/logo White.svg" alt="bookmyshow">
+              </a>
+              <div class="emptyLine2">
+              </div>
+          </div>
+          <div class="middle">
+            <ul class="social-media">
+              <li><a href="https://www.facebook.com/BookMyShowIN"><img src="images/facebook-f.svg" alt=""></a></li>
+              <li><a href="https://twitter.com/BookMyShow/"><img src="images/x-twitter.svg" alt=""></a></li>
+              <li><a href="https://www.instagram.com/bookmyshowin/"><img src="images/instagram.svg" alt=""></a></li>
+              <li><a href="https://www.youtube.com/user/BookMyShow/featured"><img src="images/youtube.svg" alt=""></a></li>
+              <li><a href="https://www.pinterest.com/bookmyshow/"><img src="images/pinterest-p.svg" alt=""></a></li>
+              <li><a href="https://www.linkedin.com/company/bookmyshow/"><img src="images/linkedin-in.svg" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="bottom">
+            Copyright
+            2024
+            © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.
+            <br>
+            The content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.
+          </div>
+        </div>
+    <script src="events.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+  </html>

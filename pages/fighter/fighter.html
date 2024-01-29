@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/cf10fd98c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fighter.css">
+    <title>BookMyShow</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="fnav">
+            <div class="left">
+                <a href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+                <input id="inputText" onkeypress="searchFun(event)" type="text" placeholder="Search For Movies, Events, Plays, Sports & Activities">
+            </div>
+            <div class="right">
+                <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ahmedabad
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                  <button class="btn-sign" onclick="login()">Sign In</button>
+                  <i class="fa-solid fa-bars"></i>    
+            </div>
+        </div>
+        <div class="secNav" style="background: rgb(245, 245, 245); width: 100%;">
+        <nav class="navbar navbar-expand-lg" style="margin-top: 15px; background: rgb(245, 245, 245); width: 100%; border-bottom: 5px solid rgb(229, 229, 229);">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/pages/movies/moviespage.html">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/pages/stream/stream.html">Stream</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/pages/events/events.html">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/pages/plays/plays.html">Plays</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Sports</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Activites</a>
+                  </li>
+                  <div class="s-right">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">ListYourShow</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Corporates</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Offers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Gift Cards</a>
+                          </li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+
+
+    <div class="container-stream" style="width: 100vh;">
+        <div class="background">
+        <div class="card mb-3" style="width: 1286px; height: 100vh; color: white; background-image: linear-gradient(90deg, rgb(26, 26, 26) 24.97%, rgb(26, 26, 26) 38.3%, rgba(26, 26, 26, 0.04) 97.47%, rgb(26, 26, 26) 100%), url(images/fighter-poster-bg.avif);">
+            <div class="row g-0">
+              <div class="col-md-4">
+               <a href="https://www.youtube.com/watch?v=6amIq_mP4xM"><img src="images/fighter-new.avif" class="img-fluid rounded-start"alt="..."></a>
+              </div> 
+              <div class="col-md-8" style="margin-inline: -100px;">
+                <div class="card-body" style="margin-top: -15px;">
+                    <h5 class="card-title" style="font-weight: bold; margin-top: 30px;">Fighter</h5>
+                    <div class="likes" style="display: flex; justify-content: start;">
+                    <i class="fa-solid fa-star" style="color: rgb(248, 68, 100);"></i>
+                    <p class="card-text">8.8/10<p style="margin-left: 9px; font-size: 13px;">22.5K Votes ></p></p>
+                </div>
+                    <div class="rating">
+                        <div class="rateText" style="color: white;">
+                            <h5>Add your rating & review</h5>
+                            <h6>Your ratings matter</h6>
+                        </div>
+                        <button class="btnRate">Rate Now</button>
+                    </div>
+                  <p class="card-text" style="background-color: white; color: black; width: 34%; margin-top: 30px;">
+                    2D, IMAX 2D ,ICE 3D, 4DX, 3D, IMAX 3D</p>
+                  <p class="card-text">2h 47m - Action, Thriller - UA - 25 Jan, 2024</p>
+                  <div class="btnBookTicket">
+                    <button>Book Ticket</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-first-footer">
+        <div class="footer1" style="padding: 1px; display: flex;">
+          <div class="hut">
+          <img src="https://in.bmscdn.com/webin/common/icons/hut.svg" alt="">
+        </div>
+        <div class="para1">
+          <h4>List your Show</h4>
+        </div>
+        <div class="para2">
+          <p>Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow</p>
+        </div>
+          <button class="btn-con">Contact today!</button>
+        </div>
+      </div>
+  
+      <div class="container-sec-footer">
+        <div class="top">
+            <div class="emptyLine1">
+            </div>
+            <a href="file:///H:/All%20Programs/JAVA%20SCRIPT/Tasks/BookMyShow%20Clone/index.html" class="footerLogo">
+              <img src="images/logo White.svg" alt="bookmyshow">
+            </a>
+            <div class="emptyLine2">
+            </div>
+        </div>
+        <div class="middle">
+          <ul class="social-media">
+            <li><a href="https://www.facebook.com/BookMyShowIN"><img src="images/facebook-f.svg" alt=""></a></li>
+            <li><a href="https://twitter.com/BookMyShow/"><img src="images/x-twitter.svg" alt=""></a></li>
+            <li><a href="https://www.instagram.com/bookmyshowin/"><img src="images/instagram.svg" alt=""></a></li>
+            <li><a href="https://www.youtube.com/user/BookMyShow/featured"><img src="images/youtube.svg" alt=""></a></li>
+            <li><a href="https://www.pinterest.com/bookmyshow/"><img src="images/pinterest-p.svg" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/company/bookmyshow/"><img src="images/linkedin-in.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="bottom">
+          Copyright
+          2024
+          © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.
+          <br>
+          The content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.
+        </div>
+      </div>
+      <script src="fighter.js"></script>
+  </body>
+</html>
