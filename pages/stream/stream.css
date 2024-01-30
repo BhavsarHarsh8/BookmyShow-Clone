@@ -15,6 +15,14 @@
     margin-right: 450px;
 }
 
+.left i{
+  position: absolute;
+  margin: 20px 10px 10px 700px;
+  color: gray;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 .fnav .right{
     display: flex;
   margin-inline-start: 10px;
@@ -40,8 +48,9 @@
 }
 .fnav .left img{
     width: 125px;
-    height: 65px;
+    height: 55px;
     margin-right: 640px;
+    margin-top: 5px;
 }
 
 .fnav .left input{
@@ -154,11 +163,11 @@
   .para1 h4{
     margin-top: 29px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     margin-inline: -15px;
   }
   .para2 p{
-    margin-top: 29px;
+    margin-top: 27px;
     margin-inline: 25px;
   }
   .btn-con{
